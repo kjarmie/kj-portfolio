@@ -1,0 +1,29 @@
+:root,
+:host {
+  --fa-style-family-custom: "Font Awesome 6 Custom";
+  --fa-font-custom: normal 400 1em/1 "Font Awesome 6 Custom";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Custom";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:
+    url("../webfonts/fa-custom.woff") format("woff"),
+    url("../webfonts/fa-custom.ttf") format("truetype");
+}
+
+.fac,
+.fa-custom {
+  font-weight: 400;
+}
+
+.fa-betcha-token:before {
+  content: "\e900";
+  font-style: normal;
+}
+.fa-betcha-buddies:before {
+  content: "\e901";
+  font-style: normal;
+}

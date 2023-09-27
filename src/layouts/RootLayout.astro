@@ -1,0 +1,54 @@
+---
+/*Global Styles and Tailwind*/
+import '@styles/globals.css'
+
+/*Font Awesome*/
+import "../assets/fontawesome/css/fontawesome.css";
+import "../assets/fontawesome/css/solid.css";
+import "../assets/fontawesome/css/brands.css";
+import "../assets/fontawesome/css/regular.css";
+import "../assets/fontawesome/css/v5-font-face.css";
+import "../assets/fontawesome/css/custom.css";
+
+/*View Transitions*/
+import { ViewTransitions } from "astro:transitions";
+
+import {Image} from 'astro:assets';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="generator" content={Astro.generator}/>
+  <title>kjarmie</title>
+  <ViewTransitions />
+</head>
+<body class="flex flex-col items-center bg-sky-950 pt-16 px-8 min-w-mm">
+<div class="text-white max-w-screen-lg w-full h-screen mt-16">
+  <header class="flex justify-between">
+    <div class="inline-flex items-start gap-4">
+      <Image src="/icons/logo_sky.svg" alt="" width={100} height={100} class="w-20 h-20 sm:w-24 sm:h-24 hover:-scale-x-100 hover:rotate-[360deg] hover:fill-teal-400 transition-all duration-500"/>
+      <div class="">
+        <p class="text-2xl sm:text-4xl">armie.co.za</p>
+        <nav class="flex gap-2 pt-2">
+          <a href="/" class="text-md sm:text-lg">Home</a>
+          <a href="/about" class="text-md sm:text-lg">About</a>
+          <a href="/blog" class="text-md sm:text-lg">Blog</a>
+        </nav>
+      </div>
+    </div>
+    <div>
+      Placeholder
+    </div>
+  </header>
+  <main class="mt-24">
+    <slot/>
+  </main>
+  <footer class="">
+    Footer
+  </footer>
+</div>
+</body>
+</html>

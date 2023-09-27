@@ -1,0 +1,34 @@
+---
+/*Global Styles and Tailwind*/
+import '@styles/globals.css'
+
+/*Font Awesome*/
+import "../assets/fontawesome/css/fontawesome.css";
+import "../assets/fontawesome/css/solid.css";
+import "../assets/fontawesome/css/brands.css";
+import "../assets/fontawesome/css/regular.css";
+import "../assets/fontawesome/css/v5-font-face.css";
+import "../assets/fontawesome/css/custom.css";
+
+/*View Transitions*/
+import {ViewTransitions} from "astro:transitions";
+
+import {Image} from 'astro:assets';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="generator" content={Astro.generator}/>
+  <title>kjarmie</title>
+  <ViewTransitions/>
+</head>
+<body class="flex flex-col items-center bg-sky-950 pt-16 px-8 min-w-mm">
+<div class="my-8">I think you may be a bit lost...</div>
+<a href="/">
+  Take me back to safety
+</a>
+</body>
+</html>
