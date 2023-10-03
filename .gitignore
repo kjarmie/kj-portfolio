@@ -1,3 +1,7 @@
+# dev
+.idea/
+.idea/*
+
 # build output
 dist/
 # generated types
