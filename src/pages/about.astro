@@ -1,4 +1,22 @@
 ---
 import RootLayout from "../layouts/RootLayout.astro";
+import SocialMedia from "../components/SocialMedia.astro";
 ---
-<RootLayout>about</RootLayout>
+<RootLayout>
+  <h1 class="my-4 text-3xl">About Me</h1>
+  <p>My name is Kieran (Joseph) Armstrong, going by kjarmie in my dev and gaming life. I started programming in grade 6, making mods for Minecraft,
+    where I learned some very basic Java. Half my family are developers, so I wanted to do something different. I started university with the
+    intention of becoming a Maths and Physics teacher, but very quickly I fell back in love with coding and all the problem solving involved
+  </p>
+  <p>
+    During my studies at Nelson Mandela University, I always planned on doing pure backend work, so when I started my first job at Arksoft and I was
+    required to use HTML and CSS, I was a bit nervous. But I took to it very quickly, and the rest is history.
+  </p>
+  <SocialMedia/>
+
+</RootLayout>
+<style>
+  p {
+    @apply mb-4 text-lg;
+  }
+</style>

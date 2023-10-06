@@ -1,0 +1,16 @@
+---
+import RootLayout from "./RootLayout.astro";
+import {cn} from "../utils/cn";
+---
+<RootLayout>
+  <div class="flex items-center justify-center">
+    <article
+      class={cn("prose flex flex-col items-center min-w-screen-lg " +
+        "prose-p:w-full lg:prose-xl prose-img:my-0 prose-img:mx-auto prose-neutral prose-img:h-40 prose-img:rounded-full " +
+        "prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-h4:text-white " +
+        "prose-h5:text-white prose-h6:text-white prose-a:text-white prose-th:text-white " +
+        "prose-strong:text-white prose-img:self-center mb-32")}>
+      <slot/>
+    </article>
+  </div>
+</RootLayout>

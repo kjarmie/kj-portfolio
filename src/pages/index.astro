@@ -1,14 +1,16 @@
 ---
 import RootLayout from "../layouts/RootLayout.astro";
-import { Icon } from "astro-icon";
+import {Icon} from "astro-icon";
 import BlogPost from "../components/BlogPost.astro";
+import {MarkdownInstance} from "astro";
+import SocialMedia from "../components/SocialMedia.astro";
 
 const projects: Array<{ title: string, url: string }> = [
-  { title: "project", url: "link" },
-  { title: "project", url: "link" },
+  {title: "Protea UI", url: "https://github.com/kjarmie/protea-ui"}
 ];
 
-const allPosts = await Astro.glob("../pages/posts/*.md");
+// const allPosts = await Astro.glob("../pages/posts/*.md");
+const allPosts: (MarkdownInstance<any>)[] = [];
 ---
 
 <RootLayout class="">
@@ -29,37 +31,17 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
         ))
       }
     </ul>
-
-    <div class="flex mt-8 mb-4 align-middle items-center gap-4">
-      <h3>
-        Find me on:
-      </h3>
-      <nav class="flex items-center gap-3">
-        <a class="bg-none h-6 w-6" href="https://www.linkedin.com/in/kieran-armstrong-29153b153/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-xl hover:text-sky-800 duration-200 transition-all" />
-        </a>
-        <a class="bg-none h-6 w-6" href="https://twitter.com/kjarmie" target="_blank">
-          <i class="fa-brands fa-twitter fa-xl hover:text-sky-800 duration-200 transition-all" />
-        </a>
-        <a class="bg-none h-6 w-6" href="https://www.instagram.com/kjarmie/" target="_blank">
-          <i class="fa-brands fa-instagram fa-xl hover:text-sky-800 duration-200 transition-all" />
-        </a>
-        <a class="bg-none h-6 w-6" href="https://github.com/kjarmie/" target="_blank">
-          <i class="fa-brands fa-github fa-xl hover:text-sky-800 duration-200 transition-all" />
-        </a>
-        <a class="bg-none group h-6 w-6" href="mailto:kjarmie@gmail.com">
-          <i class="fa-solid fa-envelope fa-xl transition-all duration-200 group-hover:hidden ease-in-out" />
-          <i class="fa-solid fa-envelope-open text-sky-800 transition-all duration-200 hidden scale-0 fa-xl group-hover:scale-100 group-hover:inline" />
-        </a>
-      </nav>
-    </div>
-
+    <SocialMedia/>
   </section>
   <section class="mb-16">
     <h1 class="my-4">My posts</h1>
     <ul>
-      {allPosts.map((post) =>
-        <BlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.date} />)}
+      {allPosts.length === 0 ? (
+        <div class="text-xs">There's nothing here yet, check back soon!</div>
+      ) : (
+        allPosts.map((post) =>
+          <BlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.date}/>)
+      )}
     </ul>
   </section>
 

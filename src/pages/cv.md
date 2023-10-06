@@ -5,26 +5,34 @@ author: "Kieran Armstrong"
 date: "05 Oct 2023"
 ---
 
-[//]: # (# Kieran Armstrong)
+# Kieran Armstrong
+![cover_image](http://localhost:4321/CV_cover.jpg)
 
-[//]: # ()
-[//]: # (![cover_image]&#40;http://localhost:4321//CV_cover.jpg&#41;)
+[//]: # (**Contents**)
 
-| **Contact Me** |                                                                                            |
-|----------------|--------------------------------------------------------------------------------------------|
-| GitHub         | [github.com/kjarmie](github.com/kjarmie)                                                   |
-| LinkedIn       | [linkedin.com/in/kieran-armstrong-29153b153/](linkedin.com/in/kieran-armstrong-29153b153/) |
-| Website/blog   | [kjarmie.co.za/](kjarmie.co.za/)                                                           |
-| Phone number   | +27 79 522 5767                                                                            |
-| E-mail         | [kjarmie@gmail.com](kjarmie@gmail.com)                                                     |
+[//]: # (1. [Work Experience]&#40;cv/#work-experience&#41;)
+
+[//]: # (2. [Education]&#40;cv/#education&#41;)
+
+[//]: # (3. [Tech Skill and Competencies]&#40;cv/#tech-skill-and-competencies&#41;)
+
+[//]: # (4. [Side Projects]&#40;cv/#side-projects&#41;)
+
+
+| **Contact Me** |                                                                 |
+|----------------|-----------------------------------------------------------------|
+| GitHub         | [github.com/kjarmie](https://github.com/kjarmie)                |
+| LinkedIn       | [LinkedIn](https://linkedin.com/in/kieran-armstrong-29153b153/) |
+| Website/blog   | [kjarmie.co.za/](https://kjarmie.co.za/)                        |
+| Phone number   | [+27 79 522 5767](tel:+27795225767)                             |
+| E-mail         | [kjarmie@gmail.com](mailto:kjarmie@gmail.com)                   |
 
 ## Work Experience
-
 
 ### **Junior Software Developer**
 
 **2023 - Present**
-**Arksoft**
+Arksoft
 
 As a Junior Software Developer at Arksoft, I have played a important role in the development and enhancement of ERP and custom systems for a diverse range of clients. My expertise lies in web
 application development, primarily using ASP.NET MVC, and I am proud to have introduced React.js to the company's tech stack, further advancing our capabilities.
@@ -45,7 +53,7 @@ I have succeeded in taking over management of a decade long project for one of o
 ### **BSc Honours Computer Science/Information Systems**
 
 **2022**
-**Nelson Mandela University**
+Nelson Mandela University
 
 My year project was titled, “Investigation into Procedural Generation of 2D Platformer Game Levels”. I developed an algorithm using graph theory and the Wave Function Collapse algorithm to create
 procedurally generated game levels.
@@ -57,15 +65,14 @@ My research was funded in part by the NRF.
 
 ### **BSc Honours Computer Science/Information Systems**
 
-**2022**
-**Nelson Mandela University**
+**2019 - 2021**
+Nelson Mandela University
 
-My year project was titled, “Investigation into Procedural Generation of 2D Platformer Game Levels”. I developed an algorithm using graph theory and the Wave Function Collapse algorithm to create
-procedurally generated game levels.
+I majored in Computer Science and Applied Mathematics, with Mathematics to 2nd year level, and Statistics to 1st year level.
 
-My coursework included AI, Evolutionary Computing, Data Warehousing, VR and Game Development, Usability Engineering, Compiler Construction, Electronic Commerce, and Project Management.
+My Computer Science major included Algorithms and Data Structures, Java and C# development, Android development, SQL Databases, and UI/UX. In third year, myself and 2 others completed an Android application in Java with a SQLite database as part of the year project.
 
-My research was funded in part by the NRF.
+In 2nd year, I became part of the GoldenKey Honours Society.
 
 
 ## Tech Skill and Competencies

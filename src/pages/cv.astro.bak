@@ -9,10 +9,13 @@ import {Content as CV} from '/src/cv/cv.md';
 <!--</style>-->
 
 <RootLayout>
-  <article class="prose lg:prose-xl prose-img:h-1">
-    <CV/>
-  </article>
+  <h1 class="mb-6">CV</h1>
+
 </RootLayout>
 
-
+<style>
+  p {
+    @apply mb-4 text-red-500;
+  }
+</style>
 

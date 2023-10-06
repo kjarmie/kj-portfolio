@@ -112,6 +112,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography", "tailwindcss-animate")],
 
 }
